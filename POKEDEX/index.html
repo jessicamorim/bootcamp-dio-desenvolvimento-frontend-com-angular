@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="painel" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500">
+        
+        <img width="70px" style="position: absolute; left: 300px;"  src="https://www.freeiconspng.com/thumbs/pokeball-png/file-pokeball-png-0.png" alt="">
+        <h1>Pokedéx</h1>
+
+        <div id="tela"></div>
+
+        <input type="text" id="entrada" placeholder="Digite o Pokémon">
+        <button onclick="buscar()"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+
+        <br>
+        <button onclick="anterior()"><i class="fa-solid fa-circle-arrow-left fa-2xl"></i></button>
+        <button onclick="proximo()"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></button>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    
+</body>
+</html>
